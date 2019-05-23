@@ -62,7 +62,7 @@ namespace MySeleniumTests
 
             System.IO.File.WriteAllLines(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @".\\CVOnlineJobNamesList.txt", allnames);
 
-            driver.Close();
+            driver.Quit();
 
         }
     }
