@@ -88,7 +88,7 @@ namespace MySeleniumTests
             System.IO.File.WriteAllLines(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @".\\CVKeskusJobNamesList.txt", allnames);
 
 
-            m_driver.Close();
+            m_driver.Quit();
         }
     }
 }
