@@ -26,6 +26,9 @@ namespace MySeleniumTests
             driver.Manage().Window.Maximize();
             Thread.Sleep(1000);
 
+            // close ad pop-up
+            driver.FindElement(By.ClassName("close")).Click();
+
             // click search and input info
             driver.FindElement(By.XPath("//*[@id='cvo_masthead']/div/div/div/form/div[1]/div/span/span[1]/span/ul/li/input")).SendKeys("Infotehnoloogia" + Keys.Enter);
             Thread.Sleep(1000);
